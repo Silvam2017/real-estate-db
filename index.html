@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Real Estate Database</title>
+    <link rel='stylesheet' href='style.css'></link>
 </head>
 <body>
-    
+    <header class='header'>
+        <h1>Real Estate Database</h1>
+    </header>
+
+    <section>
+
+        <div class='input-container'>
+            <input type='text' placeholder='Insert Address' id='address-search'>
+            <input type='text' placeholder='Insert Zip Code' id='zip-search'>
+            <input type='submit' id='search' value='submit' onclick='zillowFetch()'>
+        </div>
+
+        <div class='data-container'>
+            <div id='address'></div>
+            <div id='postal'></div>
+            <div id='price'></div>
+            <div id='beds'></div>
+            <div id='baths'></div>
+            <div id='sqFt'></div>
+            <div id='price-per-sqFt'></div>
+            <div id='year-built'></div>
+            <div id='status'></div>
+        </div>
+
+    </section>
+
+    <footer class='footer'>
+        Contact Us
+        555-555-5555
+        email@email.com
+    </footer>
 </body>
+
+<script src='index.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
 </html>
